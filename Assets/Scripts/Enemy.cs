@@ -32,14 +32,14 @@ public class Enemy : MonoBehaviour, IDamageable
     {
         PeriksaTransisi();
         
-        // switch (state)
-        // {
-        //     case StateZombie.IDLE: PerilakuIdle(); break;
-        //     case StateZombie.PATROL: perilakuPatrol(); break;
-        //     case StateZombie.CHASE: PerilakuChase(); break;
-        //     case StateZombie.ATTACK: perilakuAttack(); break;
+         switch (state)
+         {
+             case StateZombie.IDLE: PerilakuIdle(); break;
+             case StateZombie.PATROL: perilakuPatrol(); break;
+             case StateZombie.CHASE: PerilakuChase(); break;
+             case StateZombie.ATTACK: perilakuAttack(); break;
 
-        // }
+         }
     }
 
     public float JarakKePlayer()
